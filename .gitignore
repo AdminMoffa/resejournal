@@ -1,19 +1,45 @@
-# Ignorera vanliga hemmiljö- och cachemappar
+# Ignorera Azure CLI och PowerShell cache
 .azure/
 .cache/
 .local/
+*.log
+
+# Ignorera shell-profiler och historik
 .bash*
 .zshrc
 .tmux.conf
 
-# OS/editor
+# Ignorera OS-specifika filer
 .DS_Store
 Thumbs.db
-*.swp
 
-# Lägg till efter behov (exempel för språk/stack)
+# Ignorera editor/IDE-filer
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Ignorera PowerShell-specifika cache
+*.ps1xml
+*.pssc
+*.psrc
+
+# Ignorera moduler och paket
+Modules/
+PSModules/
 node_modules/
 __pycache__/
 *.pyc
+
+# Ignorera binära filer och byggartefakter
 bin/
 obj/
+*.dll
+*.exe
+
+# Ignorera känsliga konfigurationsfiler
+*.config
+*.json
+*.yaml
+*.yml
+*.env
