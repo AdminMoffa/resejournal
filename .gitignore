@@ -1,0 +1,19 @@
+# Ignorera vanliga hemmiljö- och cachemappar
+.azure/
+.cache/
+.local/
+.bash*
+.zshrc
+.tmux.conf
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Lägg till efter behov (exempel för språk/stack)
+node_modules/
+__pycache__/
+*.pyc
+bin/
+obj/
