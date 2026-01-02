@@ -2,4 +2,5 @@
 .local/
 .gitconfig
 .lesshst
-.local/share/powershell/PSReadLine/
+node_modules/
+dist/
