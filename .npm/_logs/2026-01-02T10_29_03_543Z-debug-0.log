@@ -1,0 +1,29 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.7.0
+2 info using node@v20.14.0
+3 silly config:load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config:load:file:/usr/csuser/clouddrive/.npmrc
+5 silly config:load:file:/home/admin/.npmrc
+6 silly config:load:file:/usr/etc/npmrc
+7 verbose title npm create vite@latest apps/web --template react-ts
+8 verbose argv "create" "vite@latest" "apps/web" "--" "--template" "react-ts"
+9 verbose logfile logs-max:10 dir:/home/admin/.npm/_logs/2026-01-02T10_29_03_543Z-
+10 verbose logfile /home/admin/.npm/_logs/2026-01-02T10_29_03_543Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/create-vite 98ms (cache revalidated)
+13 verbose stack Error: command failed
+13 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:53:27)
+13 verbose stack     at ChildProcess.emit (node:events:519:28)
+13 verbose stack     at maybeClose (node:internal/child_process:1105:16)
+13 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+14 verbose cwd /usr/csuser/clouddrive
+15 verbose Linux 6.1.91.1-microsoft-standard
+16 verbose node v20.14.0
+17 verbose npm  v10.7.0
+18 error code 161
+19 error path /usr/csuser/clouddrive
+20 error command failed
+21 error command sh -c create-vite apps/web --template react-ts
+22 verbose exit 161
+23 verbose code 161
+24 error A complete log of this run can be found in: /home/admin/.npm/_logs/2026-01-02T10_29_03_543Z-debug-0.log

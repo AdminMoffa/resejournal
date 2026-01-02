@@ -1,0 +1,33 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.7.0
+2 info using node@v20.14.0
+3 silly config:load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config:load:file:/usr/csuser/clouddrive/frontend/.npmrc
+5 silly config:load:file:/home/admin/.npmrc
+6 silly config:load:file:/usr/etc/npmrc
+7 verbose title npm create vite@latest apps/web --template react-ts
+8 verbose argv "create" "vite@latest" "apps/web" "--" "--template" "react-ts"
+9 verbose logfile logs-max:10 dir:/home/admin/.npm/_logs/2026-01-02T10_14_55_247Z-
+10 verbose logfile /home/admin/.npm/_logs/2026-01-02T10_14_55_247Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/npm 121ms
+13 http fetch GET 200 https://registry.npmjs.org/create-vite 104ms (cache miss)
+14 notice
+14 notice New [31mmajor[39m version of npm available! [31m10.7.0[39m -> [34m11.7.0[39m
+14 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.7.0[39m
+14 notice To update run: [4mnpm install -g npm@11.7.0[24m
+14 notice  { force: true, [Symbol(proc-log.meta)]: true }
+15 verbose stack Error: canceled
+15 verbose stack     at exec (/usr/lib/node_modules/npm/node_modules/libnpmexec/lib/index.js:262:19)
+15 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+15 verbose stack     at async Init.execCreate (/usr/lib/node_modules/npm/lib/commands/init.js:136:5)
+15 verbose stack     at async Init.exec (/usr/lib/node_modules/npm/lib/commands/init.js:44:14)
+15 verbose stack     at async module.exports (/usr/lib/node_modules/npm/lib/cli/entry.js:74:5)
+16 verbose cwd /usr/csuser/clouddrive/frontend
+17 verbose Linux 6.1.91.1-microsoft-standard
+18 verbose node v20.14.0
+19 verbose npm  v10.7.0
+20 error canceled
+21 verbose exit 1
+22 verbose code 1
+23 error A complete log of this run can be found in: /home/admin/.npm/_logs/2026-01-02T10_14_55_247Z-debug-0.log
