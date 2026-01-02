@@ -1,3 +1,5 @@
+.local/share/powershell/PSReadLine/ConsoleHost_history.txt
 .local/
 .gitconfig
 .lesshst
+.local/share/powershell/PSReadLine/
