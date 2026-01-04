@@ -3,7 +3,8 @@ import { defineConfig } from 'vite'
      import { VitePWA } from 'vite-plugin-pwa'
      
      export default defineConfig({
-       plugins: [
+       base: './',   // <-- viktig för Azure SWA
+        plugins: [
          react(),
          VitePWA({
            registerType: 'autoUpdate',
