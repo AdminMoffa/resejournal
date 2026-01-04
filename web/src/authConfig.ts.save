@@ -1,0 +1,11 @@
+
+import { PublicClientApplication } from "@azure/msal-browser";
+
+export const msalInstance = new PublicClientApplication({
+  auth: {
+    clientId: "ed043e70-c343-4532-8a42-516ed287d373",
+    authority: "https://<tenant>.b2clogin.com/<tenant>.onmicrosoft.com/<policy>", 
+    knownAuthorities: ["<tenant>.b2clogin.com"],
+    redirectUri: "/"
+  }
+});

@@ -1,0 +1,19 @@
+{
+  "name": "resejournal-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "func start",
+    "deploy": "echo Deploy via GitHub Actions"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.10.0",
+    "@azure/service-bus": "^7.9.0",
+    "jose": "^6.1.3",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
