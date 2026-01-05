@@ -1,3 +1,10 @@
+# PowerShell / Terminal
+.local/
+.local/share/powershell/
+*.history
+.gitconfig
+.lesshst
+
 cat > .gitignore << 'EOF'
 # dependencies
 node_modules/
