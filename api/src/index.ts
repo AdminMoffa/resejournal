@@ -1,1 +1,1 @@
-import "./functions/health";
+import "./functions/health.js";
