@@ -27,9 +27,14 @@ jobs:
       - name: Build TypeScript
         working-directory: api
         run: npm run build
+        
+        - name: Zip api folder
+        run: |
+          cd api
+          zip -r ../api.zip .
 
       - name: Deploy to Azure Functions
         uses: Azure/functions-action@v1
         with:
           app-name: resejournal-api-d5hrfecefjangrhh
-          package: api
+          package: api.zip
