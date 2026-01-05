@@ -32,4 +32,4 @@ jobs:
         uses: Azure/functions-action@v1
         with:
           app-name: resejournal-api-d5hrfecefjangrhh
-          package: api/dist
+          package: api
