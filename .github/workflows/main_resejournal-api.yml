@@ -15,6 +15,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Debug - subscription id present?
+        shell: bash
+        env:
+          SUB_ID: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_989CB7E4F0F441B49798D7232AD2411F3 }}
+        run: |
+          if [ -z "$SUB_ID" ]; then
+            echo "SUB_ID is EMPTY"
+            exit 1
+          else
+            echo "SUB_ID is set (length=${#SUB_ID})"
+          fi
 
       - name: Debug - list api files (depth 4)
         run: |
