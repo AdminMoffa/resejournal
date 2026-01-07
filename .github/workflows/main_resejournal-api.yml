@@ -56,4 +56,4 @@ jobs:
         uses: Azure/functions-action@v1
         with:
           app-name: resejournal-api
-          package: ${{ github.workspace }}/api.zip
+          package: api
