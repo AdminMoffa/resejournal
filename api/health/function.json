@@ -6,12 +6,12 @@
       "direction": "in",
       "name": "req",
       "methods": ["get"],
-      "route": "health"
+      "route": "api/health"
     },
     {
       "type": "http",
       "direction": "out",
-      "name": "$return"
+      "name": "res"
     }
   ]
 }

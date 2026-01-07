@@ -1,11 +1,7 @@
 module.exports = async function (context, req) {
-  return {
+  context.res = {
     status: 200,
-    headers: { "content-type": "application/json" },
-    body: {
-      ok: true,
-      service: "resejournal-api",
-      time: new Date().toISOString()
-    }
+    headers: { "Content-Type": "application/json" },
+    body: { ok: true, name: "resejournal-api", time: new Date().toISOString() }
   };
 };
