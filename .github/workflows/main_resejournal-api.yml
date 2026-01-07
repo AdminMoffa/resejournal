@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Use Node.js 18
         uses: actions/setup-node@v4
         with:
           node-version: "18"
@@ -24,25 +24,22 @@ jobs:
         working-directory: api
         run: npm ci
 
-      - name: Build TypeScript
+      - name: Build (TypeScript)
         working-directory: api
         run: npm run build
-        
-       - name: Debug - list api contents
-        run: |
-          echo "=== api folder ==="
-          ls -la api
-          echo "=== api tree (depth 3) ==="
-          find api -maxdepth 3 -type f -print
 
-      - name: Zip api folder
+      - name: Debug - list api files (depth 4)
+        run: |
+          echo "=== api files ==="
+          find api -maxdepth 4 -type f -print | sort
+
+      - name: Zip api folder (exclude node_modules)
         run: |
           cd api
-          zip -r ../api.zip .
+          zip -r ../api.zip . -x "node_modules/*"
           cd ..
-          echo "=== zip content ==="
+          echo "=== api.zip content ==="
           unzip -l api.zip | head -n 200
-
 
       - name: Deploy to Azure Functions
         uses: Azure/functions-action@v1
