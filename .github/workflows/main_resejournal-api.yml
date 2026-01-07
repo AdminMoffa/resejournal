@@ -1,7 +1,7 @@
 name: Deploy Azure Functions (api)
 
 on:
-workflow_dispatch:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -15,19 +15,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Use Node.js 18
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-
-      - name: Install dependencies
-        working-directory: api
-        run: npm ci
-
-      - name: Build (TypeScript)
-        working-directory: api
-        run: npm run build
 
       - name: Debug - list api files (depth 4)
         run: |
