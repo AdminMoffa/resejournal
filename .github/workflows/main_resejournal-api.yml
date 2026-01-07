@@ -19,7 +19,7 @@ jobs:
       - name: Debug - subscription id present?
         shell: bash
         env:
-          SUB_ID: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_989CB7E4F0F441B49798D7232AD2411F3 }}
+          SUB_ID: ${{ secrets.AZ_SUBSCRIPTION_ID }}
         run: |
           if [ -z "$SUB_ID" ]; then
             echo "SUB_ID is EMPTY"
